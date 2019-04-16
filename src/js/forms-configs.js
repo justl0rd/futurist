@@ -88,7 +88,7 @@ $(document).ready(function() {
                             })
                             .always(function(response) {
                                 //ссылка на страницу "спасибо" - редирект
-                                location.href = 'https://legend.webdeity.ru/legend.pdf';
+                                location.href = '/futurist.pdf';
                                 //отправка целей в Я.Метрику и Google Analytics
                             });
                         break;

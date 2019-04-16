@@ -1,0 +1,96 @@
+.get-demo {
+    padding: 120px 0;
+    margin-bottom: 70px;
+	background: url(../img/get-demo-bg.jpg) center bottom no-repeat;
+	background-size: 110%;
+	box-shadow: 0px 0px 76px 0px rgba(0, 0, 0, 0.2);
+    position: relative;
+    color: $WHITE;
+    
+    &__title {
+        &::after {
+            content: '';
+            display: block;
+            width: 100%;
+            max-width: 620px;
+            height: 1px;
+            background: $WHITE;
+            margin: 10px 0 25px 0;
+        }
+    }
+    
+    &__text {
+        margin-top: 27px;
+        margin-bottom: 59px;
+        font-size: rem(24);
+        max-width: 790px;
+        font-weight: $font-thin;
+    }
+    
+    &__button {
+        padding: 22px 48px;
+        text-transform: uppercase;
+        box-shadow: 0px 0px 49px 0px rgba(0, 0, 0, 0.21);
+    }
+}
+
+
+
+/*form*/
+
+.get-demo__form {
+	width: 100%;
+	padding: 50px 54px 60px;
+	position: fixed;
+    background: #fff;
+    color: $BLACK;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 430px;
+	display: none;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	z-index: 11;
+    box-shadow: 0px 0px 150px 0px rgba(0, 0, 0, 0.31);
+    
+    
+    &-title {
+        margin-bottom: 32px;
+        text-align: center;
+    }
+
+    &-label {
+        position: relative;
+    }
+
+    &-input {
+        display: block;
+        width: 100%;
+        border: none;
+        padding: 6px 0;
+        border-bottom: 1px solid rgba(46, 46, 46, 0.502);
+        color: rgba(46, 46, 46, 0.502);
+        font-size: rem(24);
+        margin-bottom: 25px;
+    }
+
+    &-secure {
+        display: block;
+        color: rgba(46, 46, 46, 0.341);
+        text-align: center;
+        &::before {
+            display: inline-block;
+            content: '';
+            width: 10px;
+            height: 13px;
+            background: url(../img/icons-1.png) no-repeat left top;
+        }
+    }
+    &-btn {
+        margin-bottom: 32px;
+    }
+}
