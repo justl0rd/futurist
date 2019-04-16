@@ -1,0 +1,69 @@
+.personal-flat {
+	background: url(../img/quize-personal-flat-bg.jpg) left bottom no-repeat;
+    background-size: cover;
+    margin-bottom: 70px;
+    position: relative;
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        background: #fff;
+        right: 7%;
+        top: 0;
+        width: 85px;
+        height: 100%;
+    }
+
+    &__flat-quize {
+        padding: 120px 60px 250px;
+        max-width: 900px;
+        background: $WHITE;
+    }
+}
+
+.flat-quize {
+    &__title {
+        max-width: 530px;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 95%;
+            height: 1px;
+            background: #000;
+            margin: 10px 0 25px 0;
+        }
+    }
+
+    &__subtitle {
+        font-weight: $font-thin;
+        max-width: 580px;
+    }
+
+    &__wrapp {
+        align-items: center;
+    }
+    
+    &__questions-number {
+        font-size: rem(118);
+        line-height: 1em;
+        color: #77859b;
+        margin-right: 10px;
+    }
+
+    &__text {
+        max-width: 370px;
+        font-size: rem(18);
+        color: #020202;
+    }
+
+    &__button-wrapper {
+        margin-top: 40px;
+
+    }
+    
+    &__button {
+        box-shadow: 0px 0px 49px 0px rgba(0, 0, 0, 0.21);
+    }
+}
