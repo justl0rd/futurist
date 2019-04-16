@@ -90,14 +90,6 @@ input {
 	background: transparent;
 	border: none;
 	padding: 5px 0;
-	
-	&:hover {
-		cursor: pointer;
-	}
-
-	&:focus {
-		color: goldenrod;
-	}
 }
 
 .d-flex {

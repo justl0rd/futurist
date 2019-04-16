@@ -103,3 +103,10 @@
         flex-basis: 350px;
     }
 }
+.fix-the-price__input {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.fix-the-price__input:focus {
+    color: rgba(255, 255, 255, 0.8);
+}
