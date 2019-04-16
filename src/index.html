@@ -7,8 +7,8 @@
 	<meta name="description" content="Futurist - твой дом в лучшем районе для счастья">
 	<meta name="keywords" content="Futurist, жилой комплекс Futurist, жилой комплекс Питер, недвижимость в Балтийской Жемчужине">
 	<!-- Favicon -->
-	<link rel="shortcut icon" href="img/favicon/favicon.ico">
-	<link rel="icon" type="image/png" sizes="196x196" href="img/favicon/favicon-192.png">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="icon" type="image/png" sizes="196x196" href="favicon-192.png">
 	<!-- OG Tags -->
 	<meta property="og:title" content="Futurist">
 	<meta property="og:description" content="Futurist - твой дом в лучшем районе для счастья">
@@ -21,14 +21,6 @@
 	<meta name="msapplication-navbutton-color" content="#f2f2f5">
 	<!-- iOS Safari -->
 	<meta name="apple-mobile-web-app-status-bar-style" content="#f2f2f5">
-	<!-- css -->
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/fonts.css">
-<!-- 	<link rel="stylesheet" href="css/style.min.css"> -->
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/media.css">
-	<!-- script -->
-	<script src="js/index.js" defer></script>
 </head>
 <body>
 	<!--start header -->
@@ -37,11 +29,13 @@
 			<nav class="nav">
 				<div class="container d-flex">
 					<a href="/" class="logo d-flex" aria-label="company logo">
-						<img class="logo__text" src="img/logo.png" alt="Логотип">
+						<img class="logo__img" src="assets/img/logo-1.png" alt="Логотип">
 						<span class="logo__line"></span>
-						<img class="logo__img" src="img/logo-1.png" alt="Логотип">
+						<img class="logo__rbi" src="assets/img/logo.png" alt="Логотип">
+						<span class="logo__line"></span>
+						<img class="logo__text" src="assets/img/logo-2.png" alt="Логотип">
 						<p class="logo__info">
-							Официальный партнер “Futurista Intelligent Development
+							Официальный партнер застройщика RBI
 						</p>
 					</a>
 					<div class="menu d-flex">
@@ -76,12 +70,12 @@
 			</nav>
 			<div class="header__offer">
 				<h1 class="header__title">
-					Твой дом в лучшем районе для счастья
+					Futurist
 				</h1>
 				<p class="header__text">
-					Жилой комплекс в районе “Балтийская Жемчужина”
+						Уют в доме - основа хорошего настроения
 				</p>
-				<a href="#manage" class="header__btn btn goto">
+				<a href="#excursion" class="header__btn btn goto">
 					Заказать просмотр
 				</a>
 			</div>
@@ -97,7 +91,7 @@
 					<input type="tel" class="header__form-input header__form-input_get-number" placeholder="Введите телефон" name="tel">
 				</label>
 				<button class="header__form-btn btn" data-submit>
-					Заказать звонок
+					Хочу на экскурсию
 				</button>
 				<span class="header__form-secure">
 					Ваши данные защищены
@@ -434,7 +428,7 @@
 	<!-- comfort section end -->
 
 	<!-- excursion start -->
-	<section class="excursion">
+	<section class="excursion" id="excursion">
 		<div class="container">
 				<div class="excursion__offer">
 					<h2 class="excursion__title">
@@ -572,7 +566,7 @@
 	</footer>
 	<!-- footer end -->
     <div id="loader">
-        <img alt="Loader" src="img/ripple.svg">
+        <img alt="Loader" src="assets/img/ripple.svg">
     </div>
     <div id="overlay">
         <div id="thx">
@@ -581,6 +575,5 @@
     </div>
     <script src="https://code.jquery.com/jquery-latest.js"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.js"></script>
-    <script src="js/forms-configs.js"></script>
 </body>
 </html>

@@ -1,9 +1,10 @@
 // Font
-
-$myriad-bold        : 'Myriad Pro Bold', sans-serif;
-$myriad-regular     : 'Myriad Pro Regular', sans-serif;
-$open-sans-r        : 'Open Sans Regular', sans-serif;
-$roboto-r           : 'Roboto', sans-serif;
+$main-font          : 'HelveticaNeueCyr', sans-serif;
+$font-black         : 900;
+$font-bold          : 700;
+$font-roman         : 400;
+$font-light         : 300;
+$font-thin          : 100;
 
 // Size
 
@@ -17,7 +18,7 @@ $mediaLG         : 992px;
 $mediaMD         : 768px;
 $mediaSM         : 576px;
 
-$containerXXL    : 1140px;
+$containerXXL    : 1435px;
 $containerXL     : 1140px;
 $containerLG     : 960px;
 $containerMD     : 720px;
@@ -31,10 +32,9 @@ $WHITE: #fff;
 
 // Main color
 
-$main-text-color     : #fff;
-$card-hover-color    : rgba(0, 0, 0, 0.65);
-$button-color        : #00AACA;
-$placeholder-color   : #525252;
+$main-text-color     : #000;
+$main-light-color     : #fbfbfb;
+$button-color        : #e9792d;
 
 // Neutral Color
 
