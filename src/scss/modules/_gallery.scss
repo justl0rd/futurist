@@ -1,0 +1,30 @@
+#gallery {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery {   
+  &__image-wrapper {
+    display: block;
+    width: 80%;
+  }
+  
+  &__image {
+    width: 100%;
+  }
+  
+  &__button-wrapper {
+    position: relative;
+    width: 60px;
+  }
+  
+  &__button {
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+// animations
