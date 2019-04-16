@@ -1,0 +1,148 @@
+.quize__question {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: rgb(46, 46, 46);
+  }
+  
+  .quize__answers-list {
+    display: flex;
+    flex-direction: column;
+    min-height: 350px;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 40px;
+  }
+  
+  .quize__label {
+    margin-bottom: 30px;
+    cursor: pointer;
+    text-align: left;
+  }
+  
+  .quize__span {
+    padding-left: 30px;
+    position: relative;
+    color: rgb(46, 46, 46);
+    font-size: 1.25rem;
+  }
+  
+  .quize__span::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: -15px;
+    border: 2px solid #000;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+  }
+  
+  .quize__input {
+    opacity: 0;
+  }
+  
+  .quize__input:checked + .quize__span::before {
+    background: #000;
+  }
+  
+  .quize__buttons-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .quize__buttons {
+    padding: 13px 75px;
+  }
+  
+  /*form*/
+  
+  .quize-form__subtitle {
+    margin-top: 15px;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+  }
+  
+  .quize-form__buttons-wrapper {
+    margin-top: 145px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .quize-form__submit-button,
+  .quize-form__prev-button {
+    padding: 13px 35px;
+    text-align: center;
+  }
+  
+  .quize-form__label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .quize-form__input {
+    padding: 10px 0;
+    flex-basis: 355px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(46, 46, 46, 0.502);
+  }
+  
+  /*thanks*/
+  
+  .quize-thanks__title {
+    margin-bottom: 78px;
+  }
+  
+  .quize-thanks__text {
+    margin-bottom: 175px;
+    color: rgb(46, 46, 46);
+    font-size: 1.25rem;
+  }
+  
+  /*number*/
+  
+  .quize__number {
+    position: absolute;
+    right: 80px;
+    bottom: 32%;
+    font-size: 4.875rem;
+    font-family: "Book Antiqua", sans-serif;
+    font-weight: 700;
+    color: rgba(46, 46, 46, 0.329);
+  }
+  
+  .quize__error-message {
+      position: absolute;
+      color: #DF013A;
+      bottom: -18px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: .8rem;
+      width: 68%;
+      text-align: center;
+  }
+  
+  
+  @media screen and (max-width: 576px) {
+    .quize__buttons-wrapper {
+      flex-direction: column;
+    }
+  
+    .quize__buttons_left {
+      order: 2;
+      margin-top: 25px;
+    }
+  }
+  
+  @media screen and (max-width: 435px) {
+    .quize-form__buttons-wrapper {
+      flex-direction: column;
+    }
+  
+    .quize-form__prev-button {
+      order: 2;
+      margin-top: 25px;
+    }
+  }
