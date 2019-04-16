@@ -108,14 +108,13 @@
         padding: 6px 0;
         border-bottom: 1px solid rgba(46, 46, 46, 0.502);
         color: rgba(46, 46, 46, 0.502);
-        font-size: 1rem;
+        font-size: rem(24);
         margin-bottom: 25px;
     }
 
     &-secure {
         display: block;
         color: rgba(46, 46, 46, 0.341);
-        font-size: 1em;
         text-align: center;
         &::before {
             display: inline-block;
@@ -127,7 +126,5 @@
     }
     &-btn {
         margin-bottom: 32px;
-        padding: 19px 55px;
-        font-size: 1rem;
     }
 }
