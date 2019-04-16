@@ -106,7 +106,7 @@
 	<section class="gallery">
 		<div class="container">
 			<h2 class="gallery__title">Галерея</h2>
-			<div class="gallery__subtitle-wrapper">
+			<div class="subtitle-wrapper gallery__subtitle-wrapper">
 				<span class="gallery__subtitle">
 					Эффект присутствия
 				</span>
@@ -134,29 +134,36 @@
 	<!-- start manage -->
 	<section class="special-offer">
 		<div class="container">
+			<div class="text-wrapper special-offer__text-wrapper">
+				<h2 class="special-offer__title">Успеуте Получить</h2>
+				<div class="subtitle-wrapper special-offer__subtitle-wrapper">
+					<span class="special-offer__subtitle">
+						Предложение от которого вы
+						не сможете отказаться
+					</span>
+				</div>
+			</div>
 			<div class="manage__offer">
-				<h2 class="manage__title">Успей получить специальное предложение на квартиру мечты!</h2>
-				<div class="manage__timer d-flex">
-					<span class="timer__unit">00</span>
-					<span class="timer__unit">00</span>
-					<span class="timer__unit">00</span>
-					<span class="timer__unit">00</span>
+				<div class="manage__timer">
+					<span class="timer__unit">22</span>
+					<span class="timer__unit">03</span>
+					<span class="timer__unit">40</span>
+					<span class="timer__unit">59</span>
 				</div>
 			</div>
 
 			<div class="special-offer__fix-the-price">
 				<form action="success.php" class="special-offer__form" method="POST">
-					<h3 class="fix-the-price__title">
-						Зафиксировать цену
-					</h3>
-					<div class="fix-the-price__get-userdata d-flex">
-						<input class="fix-the-price__input" type="text" name="price-get-name" placeholder="Введите телефон">
-						<input class="fix-the-price__input" type="tel" name="price-get-phone" placeholder="Введите телефон">
-						<label for="price-get-name" class="fix-the-price__label"></label>
-						<label for="price-get-name" class="fix-the-price__label"></label>
-					</div>
-					<div class="fix-the-price__button-wrapper">
-						<button class="fix-the-price__button btn">Получить скидку</button>
+					<div class="fix-the-price">
+						<label for="price-get-name" class="fix-the-price__label">
+							<input class="fix-the-price__input" type="text" name="price-get-name" placeholder="Введите имя">
+						</label>
+						<label for="price-get-name" class="fix-the-price__label">
+								<input class="fix-the-price__input" type="tel" name="price-get-phone" placeholder="Введите телефон">
+						</label>
+						<div class="fix-the-price__button-wrapper">
+							<button class="fix-the-price__button btn">Получить скидку</button>
+						</div>
 					</div>
 				</form>
 			</div>

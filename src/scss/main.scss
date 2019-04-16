@@ -3,9 +3,10 @@
 @import "utils/mixins";
 @import "utils/fonts";
 
-@import "modules/gallery";
 // markup
 @import "modules/general/specification";
 @import "modules/header";
+@import "modules/gallery";
+@import "modules/to-get";
 
 @import "modules/personal-flat";
