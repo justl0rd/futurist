@@ -1,6 +1,11 @@
 import ElementsConstructor from '../elements-constructor';
 const dom = new ElementsConstructor();
 
+function isValideNumber(data) {
+	const rule = '^([\+]+)*[0-9\x20\x28\x29\-]{5,20}$';
+	return !!(data.match(rule));
+}
+
 class QuizeRender {
 	constructor() {}
 
