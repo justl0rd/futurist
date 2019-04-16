@@ -1,3 +1,5 @@
+@import './container';
+
 html {
 	font-size: $mainFontSize;
 }
@@ -90,11 +92,6 @@ button {
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-}
-
-.container {
-	width: $containerXXL;
-	margin: 0 auto;
 }
 
 .btn {

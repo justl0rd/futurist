@@ -1,0 +1,68 @@
+#gallery {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery {
+    padding: {
+        top: 140px;
+        bottom: 120px;
+    }
+
+    &__title {
+        margin-bottom: 40px;
+    }
+
+    &__subtitle-wrapper {
+        margin-bottom: 90px;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: -16px;
+            width: 402px;
+            border-top: 1px solid rgb(0, 0, 0);
+        }
+    }
+
+    &__image-wrapper {
+        flex-basis: 950px;
+    }
+
+    &__image {
+        display: block;
+        width: 100%;
+    }
+
+    &__button-wrapper {
+        position: relative;
+        flex-basis: 243px;
+    }
+
+    &__button {
+        position: absolute;
+        width: 20px;
+        height: 33px;
+        top: 50%;
+        background: transparent;
+        border: none;
+
+        &_left {
+            left: 0;
+            background: url(../img/gallery/arrow.png) center center no-repeat;
+            background-size: cover;
+            transform: translateY(-50%);
+        }
+
+        &_right {
+            right: 0;
+            background: url(../img/gallery/arrow.png) center center no-repeat;
+            background-size: cover;
+            transform: translateY(-50%) rotate(180deg);
+        }
+    }
+}
+
+// animations
