@@ -42,12 +42,12 @@ h6 {
 	padding: 0;
 	margin: 0;
 	text-transform: uppercase;
-	font-weight: $font-bold;
+	font-weight: $font-roman;
 }
 
 h1 {
 	font-size: rem(77);
-
+	font-weight: $font-bold;
 }
 
 h2 {
