@@ -21,3 +21,7 @@
   ::-moz-placeholder          {@content}
   :-ms-input-placeholder      {@content}
 }
+
+@mixin sample {
+  font-size: 12px;
+}
