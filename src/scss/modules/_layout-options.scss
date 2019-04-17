@@ -87,6 +87,10 @@
     &__form {
         display: block;
 
+        & #tel-error {
+            display: none !important;
+        }
+
         label {
             position: relative;
             display: block;
@@ -94,17 +98,15 @@
             text-align: left;
             max-width: 61.37%;
             margin-bottom: 40px;
-
-            &::after {
-                @include line(#000, 100%);
-                top: 34px;
-            }
         }
     }
 
     &__get-number {
         font-size: rem(24);
         font-weight: $font-thin;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+        width: 90%;
+        display: block;
     }
 
     &__button {
