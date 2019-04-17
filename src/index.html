@@ -143,8 +143,8 @@
 					</span>
 				</div>
 			</div>
-			<div class="manage__offer">
-				<div class="manage__timer">
+			<div class="special-offer__offer">
+				<div class="special-offer__timer">
 					<span class="timer__unit">22</span>
 					<span class="timer__unit">03</span>
 					<span class="timer__unit">40</span>
@@ -153,18 +153,15 @@
 			</div>
 
 			<div class="special-offer__fix-the-price">
-				<form action="success.php" class="special-offer__form" method="POST">
-					<div class="fix-the-price">
-						<label for="price-get-name" class="fix-the-price__label">
-							<input class="fix-the-price__input" type="text" name="price-get-name" placeholder="Введите имя">
-						</label>
-						<label for="price-get-name" class="fix-the-price__label">
-								<input class="fix-the-price__input" type="tel" name="price-get-phone" placeholder="Введите телефон">
-						</label>
-						<div class="fix-the-price__button-wrapper">
-							<button class="fix-the-price__button btn">Получить скидку</button>
-						</div>
-					</div>
+				<form action="success.php" class="special-offer__form fix-the-price js-form" data-id="popupResult">
+					<input name="id-form" type="text" value=" Секция с таймером" hidden>
+					<label class="special-offer__label">
+						<input class="special-offer__input" type="text" name="name" placeholder="Введите имя">
+					</label>
+					<label class="special-offer__label">
+							<input class="special-offer__input" type="tel" name="tel" placeholder="Введите телефон">
+					</label>
+					<button class="special-offer__button btn" data-submit>Получить скидку</button>
 				</form>
 			</div>
 		</div>
@@ -374,18 +371,15 @@
 				<h3 class="excursion__form-title">
 					Записаться на просмотр
 				</h3>
-				<form action="success.php" class="special-offer__form" method="POST">
-					<div class="fix-the-price">
-						<label for="price-get-name" class="fix-the-price__label">
-							<input class="fix-the-price__input" type="text" name="price-get-name" placeholder="Введите имя">
-						</label>
-						<label for="price-get-name" class="fix-the-price__label">
-								<input class="fix-the-price__input" type="tel" name="price-get-phone" placeholder="Введите телефон">
-						</label>
-						<div class="fix-the-price__button-wrapper">
-							<button class="fix-the-price__button btn">Хочу на экскурсию</button>
-						</div>
-					</div>
+				<form action="success.php" class="special-offer__form fix-the-price js-form" data-id="popupResult">
+					<input name="id-form" type="text" value=" Запишитесь на бесплатную экскурсию" hidden>
+					<label class="fix-the-price__label">
+						<input class="fix-the-price__input" type="text" name="name" placeholder="Введите имя">
+					</label>
+					<label class="fix-the-price__label">
+							<input class="fix-the-price__input" type="tel" name="tel" placeholder="Введите телефон">
+					</label>
+					<button class="fix-the-price__button btn" data-submit>Хочу на экскурсию</button>
 				</form>
 			</div>
 		</div>
@@ -406,15 +400,16 @@
 					</div>
 				</div>
 				<div class="flats-design__get-data">
-					<form action="success.php" data-id="popupResult" class="flats-design__form js-form">
+					<form action="success.php" class="flats-design__form js-form" data-id="popupResult">
 						<h3 class="get-data__title">Хотите посмотреть?</h3>
+						<input name="id-form" type="text" value=" Дизайн квартир" hidden>
 						<label for="name" class="get-data__label">
 							<input type="text" placeholder="Введите имя" class="get-data__input" name="name">
 						</label>
 						<label for="tel" class="get-data__label">
 							<input type="tel" placeholder="Введите телефон" class="get-data__input" name="tel">
 						</label>
-						<button class="get-data__button btn">Хочу на экскурсию</button>
+						<button class="get-data__button btn" data-submit>Хочу на экскурсию</button>
 					</form>
 				</div>
 			</article>
@@ -567,6 +562,24 @@
 			<p class="footer__text">
 				Информация взята из открытых источников, не является публичной офертой и распространяется для ознакомления
 			</p>
+			<form class="footer__form js-form" action="success.php" data-id="popupResult">
+				<h5 class="footer__form-title">
+					Заполните форму
+				</h5>
+				<input name="id-form" type="text" value=" Заказ обратного звонка" hidden>
+				<label class="footer__form-label">
+					<input type="text" class="footer__form-input" placeholder="Введите имя" name="name">
+				</label>
+				<label class="footer__form-label">
+					<input type="tel" class="footer__form-input footer__form-input_get-number" placeholder="Введите телефон" name="tel">
+				</label>
+				<button class="footer__form-btn btn" data-submit>
+					Хочу на экскурсию
+				</button>
+				<span class="footer__form-secure">
+					Ваши данные защищены
+				</span>
+			</form>
 		</div>
 	</footer>
 	<!-- footer end -->

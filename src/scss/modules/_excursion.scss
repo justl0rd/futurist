@@ -32,10 +32,20 @@
     }
 }
 
-.fix-the-price__input {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-
-    &:focus {
-        color: black;
+.fix-the-price {
+    &__input {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+        color: rgba(46, 46, 46, 0.502);
+    
+        &:focus {
+            color: black;
+        }
+    }
+    &__label {
+        position: relative;
+        padding-bottom: 20px;
+    }
+    &__button {
+        margin-bottom: 20px;
     }
 }
