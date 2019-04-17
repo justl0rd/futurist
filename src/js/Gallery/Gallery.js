@@ -10,7 +10,7 @@ function leftButtonHandler() {
     const image = document.querySelector('.gallery__image');
     let newImageIndex = getCurrentImageIndex(image.src) - 1;
     
-    if (newImageIndex < galleryParams.lastImageIndex) {
+    if (newImageIndex < galleryParams.firstImageIndex) {
         newImageIndex = galleryParams.lastImageIndex;
     }
 
