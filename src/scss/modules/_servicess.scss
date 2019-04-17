@@ -1,0 +1,74 @@
+.servicess {
+    padding: 120px 0;
+    margin-bottom: 70px;
+	background: url(../img/servicess-bg.jpg) center bottom no-repeat;
+	background-size: cover;
+    position: relative;
+    color: $WHITE;
+
+    &__cards {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__card {
+        width: 28%;
+        margin-top: 110px;
+        min-height: 130px;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        font-weight: $font-thin;
+        position: relative;
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 130px;
+            height: 130px;
+            left: 180px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &_apartment::after {
+            background: url(../img/icons-1.png) no-repeat left -70px top;
+        }
+        &_housing::after {
+            background: url(../img/icons-1.png) no-repeat left -270px top;
+        }
+        &_space::after {
+            background: url(../img/icons-1.png) no-repeat left -471px top;
+            left: 200px;
+        }
+        &_metro::after {
+            background: url(../img/icons-1.png) no-repeat left -711px top 20px;
+        }
+        &_terrace::after {
+            background: url(../img/icons-1.png) no-repeat left -931px top;
+        }
+        &_duplex::after {
+            background: url(../img/icons-1.png) no-repeat left -1156px top;
+        }
+    }
+    &__count {
+        font-size: rem(48);
+        padding-bottom: 5px;
+        position: relative;
+        max-width: 165px;
+
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 120px;
+            height: 1px;
+            background: $WHITE;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__info {
+        margin-top: 15px;
+        max-width: 165px;
+    }
+}
