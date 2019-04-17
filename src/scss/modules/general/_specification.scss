@@ -224,3 +224,15 @@ label.error {
     left: 0;
     width: 240px;
 }
+
+input.error,
+input.error:focus {
+	border: none !important;
+    border-bottom: 1px solid red !important;
+}
+
+input.valid,
+input.valid:focus {
+	border: none !important;
+    border-bottom: 1px solid green !important;
+}
