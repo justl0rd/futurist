@@ -1,0 +1,70 @@
+.flats-design {
+    padding: 120px 0;
+    background: url('../img/flats-design-bg.jpg') center center no-repeat;
+    background-size: cover;
+
+    &__title {
+        margin-bottom: 37px;
+        color: #fff;
+    }
+
+    &__subtitle {
+        color: #fff;
+        font-size: rem(24);
+        font-weight: $font-thin;
+        text-transform: uppercase;
+        position: relative;
+    }
+
+    &__subtitle-wrapper {
+        position: relative;
+        max-width: 670px;
+
+        &::before {
+            @include line(#fff, 626px);
+        }
+    }
+
+    &__get-data {
+        flex-basis: 442px;
+        background-color: rgb(255, 255, 255);
+        padding: 50px 50px 50px 30px;
+    }
+
+    &__data {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.get-data {
+    &__title {
+        text-align: center;
+        max-width: 200px;
+        margin: 0 auto;
+        margin-bottom: 70px;
+    }
+
+    &__label {
+        display: block;
+        margin-bottom: 66px;
+    }
+
+    &__input {
+        display: block;
+        width: 100%;
+        color: rgba(0, 0, 0, 0.502);
+        font-size: rem(24);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.502);
+
+        &:focus {
+            color: #000;
+        }
+    }
+
+    &__button {
+        margin-top: 20px;
+        min-width: 100%;
+    }
+}
+  
