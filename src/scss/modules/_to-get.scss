@@ -90,12 +90,6 @@
     &__label {
         flex-basis: 28.74%;
         position: relative;
-
-        &::after {
-            @include line(#fff, 100%);
-            opacity: 0.7;
-            top: 26px;
-        }
     }
       
 
@@ -106,6 +100,8 @@
 .fix-the-price__input {
     color: rgba(255, 255, 255, 0.5);
     font-size: rem(24);
+    border-bottom: 1px solid;
+    width: 100%;
 }
 
 .fix-the-price__input:focus {
