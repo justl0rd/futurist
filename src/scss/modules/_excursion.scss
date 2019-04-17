@@ -1,0 +1,40 @@
+.excursion {
+    padding: 120px 0;
+
+    &__text-wrapper {
+        max-width: 486px;
+    }
+
+    &__title {
+        margin-bottom: 48px;
+    }
+    
+    &__subtitle-wrapper {
+        margin-bottom: 90px;
+        position: relative;
+
+        &::before {
+            @include line(#000, 630px);
+            top: -28px;
+        }
+    }
+
+    &__subtitle {
+        font-size: rem(16);
+        color: rgba(0, 0, 0, 0.502);
+        font-weight: $font-bold;
+    }
+
+    &__form-title {
+        font-weight: $font-bold;
+        font-size: rem(24);
+    }
+}
+
+.fix-the-price__input {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+
+    &:focus {
+        color: black;
+    }
+}
