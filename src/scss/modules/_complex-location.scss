@@ -1,0 +1,103 @@
+.complex-location {
+    padding-top: 120px;
+    padding-bottom: 100px;
+
+    &__title {
+        margin-bottom: 37px;
+    }
+
+    &__subtitle {
+        font-size: rem(24);
+        font-weight: $font-thin;
+        text-transform: uppercase;
+        position: relative;
+
+        &::before {
+            @include line(#000, 636px);
+            top: -28px;
+        }
+    }
+
+    &__subtitle-wrapper {
+        margin-bottom: 135px;
+    }
+
+    &__location-distance {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__item {
+            font-size: rem(125);
+            font-weight: $font-black;
+            color: rgba(233, 121, 45, 0.149);
+        }
+    }
+}
+
+.location-distance {
+
+    &__item {
+        padding: 0;
+        font-size: rem(125);
+        font-weight: $font-black;
+        color: rgba(233, 121, 45, 0.149);
+        position: relative;
+        flex-basis: 18.11%;
+        text-align: center;
+
+        &::before {
+            position: absolute;
+            text-transform: uppercase;
+            font-size: rem(18);
+            font-weight: $font-thin;
+            color: #000;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            display: block;
+            width: 100%;
+        }
+        &::after {
+            position: absolute;
+            text-transform: uppercase;
+            font-weight: $font-black;
+            color: rgba(233, 121, 45, 0.341);
+            font-size: rem(14);
+            text-align: center;
+            display: block;
+            bottom: 5px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        &_island {
+            &::before {
+                content: 'крестовский остров';
+            }
+            &::after {
+                content: 'метров';
+            }
+        }
+
+        &_square {
+            &::before {
+                content: 'Александровский парк';
+            }
+            &::after {
+                content: 'километра';
+            }
+        }
+
+        &_garden {
+            &::before {
+                content: 'Ботанический сад';
+            }
+            &::after {
+                content: 'километра';
+            }
+        }
+    }
+}
