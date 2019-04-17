@@ -338,7 +338,21 @@
 		</div>
 	</section>
 	<!-- layout-option end -->
-
+	<section class="complex-location">
+		<div class="container">
+			<h2 class="complex-location__title">Расположение ЖК Futurist</h2>
+			<div class="subtitle-wrapper complex-location__subtitle-wrapper">
+				<span class="complex-location__subtitle">
+						Расположен в историческом центре города, в Петроградском районе
+				</span>
+			</div>
+			<div class="complex-location__location-distance">
+				<div class="location-distance__item location-distance__item_island">600</div>
+				<div class="location-distance__item location-distance__item_garden">2</div>
+				<div class="location-distance__item location-distance__item_square">2.2</div>
+			</div>
+		</div>
+	</section>
 	<!-- get-demo start -->
 	<section class="get-demo">
 		<div class="container">
@@ -371,61 +385,36 @@
 	</section>
 	<!-- get-demo end -->
 
-	<!-- comfort section start -->
-
-	<section class="comfort">
-		<h2 class="comfort__title">Повышенный комфорт вашей жизни</h2>
-		<div class="comfort__gallery d-flex">
-			<div class="comfort__image-wrapper comfort__image_room">
-				<img src="img/comfort/1.jpg" alt="image 1" class="comfort__image ">
-			</div>
-			<div class="comfort__image-wrapper comfort__image_storeroom">
-				<img src="img/comfort/2.jpg" alt="image 2" class="comfort__image ">
-			</div>
-			<div class="comfort__image-wrapper comfort__image_badroom">
-				<img src="img/comfort/3.jpg" alt="image 3" class="comfort__image ">
-			</div>		
-		</div>
-		<div class="comfort__preview-card">
-			<div class="preview-card__text preview-card__top-text">
-				Мастер-спальня с отдельным санузлом и гардеробной
-			</div>
-			<div class="preview-card__text preview-card__bottom-text">
-				Отдельное помещение для прачечной.
-			</div>
-		</div>
-	</section>
-
-	<!-- comfort section end -->
-
 	<!-- excursion start -->
 	<section class="excursion" id="excursion">
 		<div class="container">
-				<div class="excursion__offer">
-					<h2 class="excursion__title">
-						Запишитесь на бесплатную
-						экскурсию
-					</h2>
-					<div class="excursion__text">
-						Оставьте заявку и мы организуем для вас экскурсию по проекту в сопровождении профессионального консультанта
-					</div>
+			<div class="text-wrapper excursion__text-wrapper">
+				<h2 class="excursion__title">Запишитесь на бесплатную экскурсию</h2>
+				<div class="subtitle-wrapper excursion__subtitle-wrapper">
+					<span class="excursion__subtitle">
+						Оставьте заявку и мы организуем для вас экскурсию
+						по проекту в сопровождении профессионального консультанта
+					</span>
 				</div>
-				<div class="excursion__get-data">
-					<form action="success.php" class="special-offer__form" method="POST">
-						<h3 class="fix-the-price__title">
-							Записаться на просмотр
-						</h3>
-						<div class="fix-the-price__get-userdata d-flex">
+			</div>
+			<div class="special-offer__fix-the-price">
+				<h3 class="excursiont__form-title">
+					Записаться на просмотр
+				</h3>
+				<form action="success.php" class="special-offer__form" method="POST">
+					<div class="fix-the-price">
+						<label for="price-get-name" class="fix-the-price__label">
 							<input class="fix-the-price__input" type="text" name="price-get-name" placeholder="Введите имя">
-							<input class="fix-the-price__input" type="tel" name="price-get-phone" placeholder="Введите телефон">
-							<label for="price-get-name" class="fix-the-price__label"></label>
-							<label for="price-get-name" class="fix-the-price__label"></label>
-						</div>
+						</label>
+						<label for="price-get-name" class="fix-the-price__label">
+								<input class="fix-the-price__input" type="tel" name="price-get-phone" placeholder="Введите телефон">
+						</label>
 						<div class="fix-the-price__button-wrapper">
 							<button class="fix-the-price__button btn">Хочу на экскурсию</button>
 						</div>
-					</form>
-				</div>
+					</div>
+				</form>
+			</div>
 		</div>
 	</section>
 	<!-- excursion end -->
