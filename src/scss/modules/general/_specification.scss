@@ -236,3 +236,12 @@ input.valid:focus {
 	border: none !important;
     border-bottom: 1px solid green !important;
 }
+
+@media screen and (max-width: 575px) {
+    html {
+		font-size: 14px;
+	}
+	h1 {
+		font-size: rem(50);
+	}
+}
