@@ -69,4 +69,26 @@
         min-width: 100%;
     }
 }
-  
+
+@media screen and (max-width: 1199px) {
+    .flats-design {
+        &__data {
+            display: block;
+        }
+
+        &__subtitle-wrapper {
+            margin-bottom: 75px;
+
+            &::before {
+                max-width: 568px;
+                width: 100%;
+            }
+        }
+
+        &__get-data {
+            display: block;
+            max-width: 442px;
+            margin: 0 auto;
+        }
+    }
+}

@@ -70,3 +70,13 @@
         margin-right: auto;
     }
 }
+
+@media screen and (max-width: 992px) {
+    .mortage__form {
+        display: block;
+    }
+
+    .mortage__btn {
+        margin: 0;
+    }
+}

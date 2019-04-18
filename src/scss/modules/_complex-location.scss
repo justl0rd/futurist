@@ -27,12 +27,6 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-
-        &__item {
-            font-size: rem(125);
-            font-weight: $font-black;
-            color: rgba(233, 121, 45, 0.149);
-        }
     }
 }
 
@@ -97,6 +91,46 @@
             }
             &::after {
                 content: 'километра';
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    
+    .complex-location {
+        &__location-distance {
+            display: block;
+        }
+
+        &__subtitle-wrapper {
+            margin-bottom: 100px;
+        }
+    }
+
+    .location-distance {
+        &__item {
+            max-width: 274px;
+            // text-align: left;
+            // left: 0;
+
+            &_island {
+                margin-bottom: 80px;
+            }
+
+            &_garden {
+                margin-bottom: 80px;
+            }
+
+            &::before {
+                // left: 0;
+                
+            }
+
+            &::after {
+                // left: 0;
+                // text-align: left;
+                // transform: translateX(0);
             }
         }
     }

@@ -117,3 +117,40 @@
 .fix-the-price__input:focus {
     color: rgba(255, 255, 255, 0.8);
 }
+
+@media screen and (max-width: 1199px) {
+    .special-offer {
+        &__offer {
+            justify-content: center;
+            margin-bottom: 95px;
+        }
+
+        &__subtitle-wrapper {
+            margin-bottom: 115px;
+        }
+
+        &__timer {
+            flex-basis: 100%;
+            margin-bottom: 40px;
+        }
+
+        &__form {
+            display: block;
+        }
+
+        &__label {
+            display: block;
+            max-width: 372px;
+            margin-bottom: 18px;
+
+            &:nth-child(3) {
+                margin-bottom: 50px;
+            }
+        }
+
+        &__button {
+            display: block;
+            // margin-top: 30px;
+        }
+    }
+}
