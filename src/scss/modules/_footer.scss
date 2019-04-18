@@ -35,6 +35,10 @@
         -o-flex-direction: column;
         flex-direction: column;
         margin-right: 20px;
+        
+        &_mobile {
+            display: none;
+        }
     }
 
     &__phone {
