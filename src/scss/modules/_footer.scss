@@ -183,3 +183,53 @@
         }
     }
 }
+
+@media screen and (max-width: 1500px) {
+    .footer {
+        &__menu {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .footer {
+        background: #8c8c8c;
+        &__phones {
+            margin-right: 0;
+        }
+        &__phone {
+            font-size: rem(16);
+            width: 190px;
+        }
+        &__callback {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .footer {
+        &__text {
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        &__phone {
+            text-align: center;
+            width: 100%;
+            margin-top: 20px;
+        }
+        &__works {
+            text-align: center;
+            margin-left: 0;
+        }
+        &__phones {
+            display: none;
+
+            &_mobile {
+                display: flex;
+            }
+        }
+    }
+}
