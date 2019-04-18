@@ -237,6 +237,18 @@ input.valid:focus {
     border-bottom: 1px solid green !important;
 }
 
+.modal-overlay {
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .6);
+	z-index: 1;
+}
+
 @media screen and (max-width: 575px) {
     html {
 		font-size: 14px;

@@ -44,10 +44,13 @@ class ModalWindow {
 }
 
 const headerForm = new ModalWindow();
-headerForm.setProps(dom.get('.header__form'), dom.get('.header__callback'));
+headerForm.setProps(dom.get('.header__form'), dom.get('.header__callback_open'));
+
+const headerFormMobile = new ModalWindow();
+headerFormMobile.setProps(dom.get('.header__form_mobile'), dom.get('.header__callback_mobile'));
 
 const footerForm = new ModalWindow();
-footerForm.setProps(dom.get('.footer__form'), dom.get('.footer__callback'));
+footerForm.setProps(dom.get('.footer__form'), dom.get('.footer__callback_open'));
 
 
 const conditionsForm = new ModalWindow();

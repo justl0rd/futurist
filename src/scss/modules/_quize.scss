@@ -104,12 +104,11 @@
   /*number*/
   
   .quize__number {
+    display: none;
     position: absolute;
     right: 80px;
     bottom: 32%;
     font-size: 4.875rem;
-    font-family: "Book Antiqua", sans-serif;
-    font-weight: 700;
     color: rgba(46, 46, 46, 0.329);
   }
   
