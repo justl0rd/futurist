@@ -70,6 +70,7 @@
         margin-bottom: 55px;
         max-width: 61.37%;
         height: 14vw;
+        cursor: pointer;
     }
 
     &__title {
@@ -114,6 +115,28 @@
     }
 }
 
+.options__large-image-wrapper {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 150;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.7);
+}
+
+.layout-options__large-image {
+	display: block;
+	position: absolute;
+	width: 92%;
+	height: 92%;
+	top: 4%;
+	left: 4%;
+	object-fit: contain;
+}
+
 @media screen and (max-width: 992px) {
 
     .layout-option {
@@ -126,6 +149,11 @@
 
     .flat-cards__card:not(:last-child) {
         margin-bottom: 83px;
+    }
+
+    .flat-cards__image {
+        min-height: 56vw;
+        max-width: 100%;
     }
 }
 
