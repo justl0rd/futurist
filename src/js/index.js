@@ -1,6 +1,7 @@
 import './timer.js';
 
 // modules
+import './offer-window';
 import Modal from './Modal/Modal';
 import Gallery from './Gallery/Gallery';
 import Quize from './Quize/Quize';
