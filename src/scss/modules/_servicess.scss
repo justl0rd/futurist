@@ -72,3 +72,27 @@
         max-width: 165px;
     }
 }
+
+@media screen and (max-width: 1199px) {
+    .servicess {
+        &__card {
+            width: 40%;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .servicess__card {
+        width: 100%;
+        margin-top: 35px;
+    }
+}   
+
+@media screen and (max-width: 575px) {
+    .servicess__card {
+        &::after {
+            left: 160px;
+            transform: translateY(-50%) scale(0.65);
+        }
+    }
+}   

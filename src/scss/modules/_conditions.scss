@@ -127,3 +127,37 @@
         margin-bottom: 32px;
     }
 }
+
+@media screen and (max-width: 1199px) {
+    .conditions {
+        padding-bottom: 60px;
+        &__cards {
+            flex-wrap: wrap;
+        }
+        &__card {
+            max-width: 100%;
+            width: 45%;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .conditions {
+        padding-top: 95px;
+        padding-bottom: 40px;
+
+        &__form {
+            width: 95%;
+            padding: 50px 25px;
+        }
+
+        &__subtitle {
+            margin-bottom: 65px;
+        }
+        &__card {
+            width: 100%;
+            margin-bottom: 0;
+        }
+    }
+}

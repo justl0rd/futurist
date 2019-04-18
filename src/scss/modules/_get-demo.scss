@@ -112,3 +112,12 @@
         }
     }
 }
+
+@media screen and (max-width: 575px) {
+    .get-demo {
+        &__form {
+            width: 95%;
+            padding: 50px 25px;
+        }
+    }
+}
