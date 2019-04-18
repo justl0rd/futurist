@@ -1,3 +1,32 @@
+//modal windows open
+
+$('.header__callback').click(function(){
+    $('.header__form-wrapp').css('display','block');
+    $('.header__form-overlay').click(function(){
+        $('.header__form-wrapp').css('display','none');
+    });
+});
+
+$('.footer__callback').click(function(){
+    $('.footer__form-wrapp').css('display','block');
+    $('.footer__form-overlay').click(function(){
+        $('.footer__form-wrapp').css('display','none');
+    });
+});
+
+$('.conditions__btn').click(function(){
+    $('.conditions__form-wrapp').css('display','block');
+    $('.conditions__form-overlay').click(function(){
+        $('.conditions__form-wrapp').css('display','none');
+    });
+});
+$('.get-demo__button').click(function(){
+    $('.get-demo__form-wrapp').css('display','block');
+    $('.get-demo__form-overlay').click(function(){
+        $('.get-demo__form-wrapp').css('display','none');
+    });
+});
+
 $(function () {
     /*Scroll To*/
     $("a.goto").click(function (e) {

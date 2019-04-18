@@ -85,24 +85,27 @@
 					Заказать просмотр
 				</a>
 			</div>
-			<form class="header__form header__form_mobile js-form" action="success.php" data-id="popupResult">
-				<h5 class="header__form-title">
-					Заполните форму
-				</h5>
-				<input name="id-form" type="text" value=" Заказ обратного звонка" hidden>
-				<label class="header__form-label">
-					<input type="text" class="header__form-input" placeholder="Введите имя" name="name">
-				</label>
-				<label class="header__form-label">
-					<input type="tel" class="header__form-input header__form-input_get-number" placeholder="Введите телефон" name="tel">
-				</label>
-				<button class="header__form-btn btn" data-submit>
-					Хочу на экскурсию
-				</button>
-				<span class="header__form-secure">
-					Ваши данные защищены
-				</span>
-			</form>
+			<div class="header__form-wrapp">
+				<div class="header__form-overlay"></div>
+				<form class="header__form header__form_mobile js-form" action="success.php" data-id="popupResult">
+					<h5 class="header__form-title">
+						Заполните форму
+					</h5>
+					<input name="id-form" type="text" value=" Заказ обратного звонка" hidden>
+					<label class="header__form-label">
+						<input type="text" class="header__form-input" placeholder="Введите имя" name="name">
+					</label>
+					<label class="header__form-label">
+						<input type="tel" class="header__form-input header__form-input_get-number" placeholder="Введите телефон" name="tel">
+					</label>
+					<button class="header__form-btn btn" data-submit>
+						Хочу на экскурсию
+					</button>
+					<span class="header__form-secure">
+						Ваши данные защищены
+					</span>
+				</form>
+			</div>
 		</div>
 	</header>
 	<!-- end header -->
@@ -263,7 +266,9 @@
 				<button class="get-demo__button btn">Скачать буклет</button>
 			</div>
 		</div>
-		<form class="get-demo__form js-form" action="success.php" data-id="goToNewPage">
+		<div class="get-demo__form-wrapp">
+			<div class="get-demo__form-overlay"></div>
+			<form class="get-demo__form js-form" action="success.php" data-id="goToNewPage">
 				<h5 class="get-demo__form-title">
 					Заполните форму
 				</h5>
@@ -281,6 +286,7 @@
 					Ваши данные защищены
 				</span>
 			</form>
+		</div>
 	</section>
 	<!-- get-demo end -->
 
@@ -339,24 +345,27 @@
 					</a>
 				</div>
 			</div>
-			<form class="conditions__form js-form" action="success.php" data-id="popupResult">
-				<h5 class="conditions__form-title">
-					Заполните форму
-				</h5>
-				<input name="id-form" type="text" value=" Условия покупки и акции" hidden>
-				<label class="conditions__form-label">
-					<input type="text" class="conditions__form-input" placeholder="Введите имя" name="name">
-				</label>
-				<label class="conditions__form-label">
-					<input type="tel" class="conditions__form-input conditions__form-input_get-number" placeholder="Введите телефон" name="tel">
-				</label>
-				<button class="conditions__form-btn btn" data-submit>
-					Заказать звонок
-				</button>
-				<span class="conditions__form-secure">
-					Ваши данные защищены
-				</span>
-			</form>
+			<div class="conditions__form-wrapp">
+				<div class="conditions__form-overlay"></div>
+				<form class="conditions__form js-form" action="success.php" data-id="popupResult">
+					<h5 class="conditions__form-title">
+						Заполните форму
+					</h5>
+					<input name="id-form" type="text" value=" Условия покупки и акции" hidden>
+					<label class="conditions__form-label">
+						<input type="text" class="conditions__form-input" placeholder="Введите имя" name="name">
+					</label>
+					<label class="conditions__form-label">
+						<input type="tel" class="conditions__form-input conditions__form-input_get-number" placeholder="Введите телефон" name="tel">
+					</label>
+					<button class="conditions__form-btn btn" data-submit>
+						Заказать звонок
+					</button>
+					<span class="conditions__form-secure">
+						Ваши данные защищены
+					</span>
+				</form>
+			</div>
 		</div>
 	</section>
 	<!-- conditions end-->
@@ -576,24 +585,27 @@
 					Cейчас работаем
 				</p>
 			</div>
-			<form class="footer__form js-form" action="success.php" data-id="popupResult">
-				<h5 class="footer__form-title">
-					Заполните форму
-				</h5>
-				<input name="id-form" type="text" value=" Заказ обратного звонка" hidden>
-				<label class="footer__form-label">
-					<input type="text" class="footer__form-input" placeholder="Введите имя" name="name">
-				</label>
-				<label class="footer__form-label">
-					<input type="tel" class="footer__form-input footer__form-input_get-number" placeholder="Введите телефон" name="tel">
-				</label>
-				<button class="footer__form-btn btn" data-submit>
-					Хочу на экскурсию
-				</button>
-				<span class="footer__form-secure">
-					Ваши данные защищены
-				</span>
-			</form>
+			<div class="footer__form-wrapp">
+				<div class="footer__form-overlay"></div>
+				<form class="footer__form js-form" action="success.php" data-id="popupResult">
+					<h5 class="footer__form-title">
+						Заполните форму
+					</h5>
+					<input name="id-form" type="text" value=" Заказ обратного звонка" hidden>
+					<label class="footer__form-label">
+						<input type="text" class="footer__form-input" placeholder="Введите имя" name="name">
+					</label>
+					<label class="footer__form-label">
+						<input type="tel" class="footer__form-input footer__form-input_get-number" placeholder="Введите телефон" name="tel">
+					</label>
+					<button class="footer__form-btn btn" data-submit>
+						Хочу на экскурсию
+					</button>
+					<span class="footer__form-secure">
+						Ваши данные защищены
+					</span>
+				</form>
+			</div>
 		</div>
 	</footer>
 	<!-- footer end -->
