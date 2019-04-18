@@ -128,3 +128,23 @@
         margin-bottom: 83px;
     }
 }
+
+@media screen and (max-width: 767px) {
+    .layout-option {
+        padding: 90px 0;
+
+        &__title {
+            margin-bottom: 10px;
+        }
+
+        &__subtitle {
+            &::before {
+                top: -10px;
+            }
+        }
+    }
+
+    .flats-preview__item {
+        font-size: rem(15);
+    }
+}

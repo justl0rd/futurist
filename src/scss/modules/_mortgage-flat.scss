@@ -32,3 +32,20 @@
         box-shadow: 0px 0px 49px 0px rgba(0, 0, 0, 0.21);
     }
 }
+
+@media screen and (max-width: 767px) {
+    .mortgage-flat {
+        &::after {
+            display: none;
+        }
+    }
+
+    .mortgage-flat__flat-quize {
+        padding-top: 99px;
+        padding-bottom: 185px;
+    }
+
+    .flat-quize__subtitle {
+        margin-bottom: 75px;
+    }
+}

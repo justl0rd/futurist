@@ -80,3 +80,24 @@
         margin: 0;
     }
 }
+
+@media screen and (max-width: 767px) {
+    .mortage {
+        padding: 90px 0;
+
+        &__title {
+            &::after {
+                margin-top: 3px;
+                margin-bottom: 7px;
+            }
+        }
+
+        &__subtitle {
+            margin-bottom: 50px;
+        }
+
+        &__form-title {
+            margin-bottom: 50px;
+        }
+    }
+}

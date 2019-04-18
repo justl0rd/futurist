@@ -111,8 +111,6 @@
     .location-distance {
         &__item {
             max-width: 274px;
-            // text-align: left;
-            // left: 0;
 
             &_island {
                 margin-bottom: 80px;
@@ -121,17 +119,22 @@
             &_garden {
                 margin-bottom: 80px;
             }
+        }
+    }
+}
 
+@media screen and (max-width: 767px) {
+    .complex-location {
+        padding: 90px 0;
+
+        &__subtitle {
             &::before {
-                // left: 0;
-                
+                width: 100%;
             }
+        }
 
-            &::after {
-                // left: 0;
-                // text-align: left;
-                // transform: translateX(0);
-            }
+        &__subtitle-wrapper {
+            margin-bottom: 45px;
         }
     }
 }

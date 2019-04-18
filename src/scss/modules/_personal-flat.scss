@@ -21,3 +21,20 @@
         background: $WHITE;
     }
 }
+
+@media screen and (max-width: 767px) {
+    .personal-flat {
+        &::after {
+            display: none;
+        }
+    }
+
+    .personal-flat__flat-quize {
+        padding-top: 99px;
+        padding-bottom: 185px;
+    }
+
+    .flat-quize__subtitle {
+        margin-bottom: 75px;
+    }
+}

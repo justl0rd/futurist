@@ -63,4 +63,16 @@
     }
 }
 
-// animations
+@media screen and (max-width: 767px) {
+    .gallery {
+        padding: 90px 0;
+
+        &__button-wrapper {
+            flex-basis: 8.96%;
+        }
+
+        &__image-wrapper {
+            flex-basis: 82.5%;
+        }
+    }
+}

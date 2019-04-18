@@ -94,3 +94,21 @@
         margin-bottom: 32px;
     }
 }
+
+@media screen and (max-width: 767px) {
+    .get-demo {
+        margin-bottom: 0;
+        padding-top: 95px;
+        padding-bottom: 90px;
+
+        &__title {
+            &::after {
+                margin-bottom: 13px;
+            }
+        }
+
+        &__text {
+            margin-top: 0;
+        }
+    }
+}
