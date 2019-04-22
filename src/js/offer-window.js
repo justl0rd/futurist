@@ -46,5 +46,5 @@ window.onload = function() {
 			const randomRange = randomInteger(0, offerWindowData.length - 1);
 			document.body.append(offerWindow(offerWindowData, randomRange));
 		}
-	}, 30000);
+	}, 300000);
 };

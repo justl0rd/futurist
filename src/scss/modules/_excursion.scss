@@ -79,3 +79,9 @@
         }
     }
 }
+
+@media screen and (max-width: 575px) {
+    .excursion__subtitle-wrapper::before {
+        max-width: 300px;
+    }
+}

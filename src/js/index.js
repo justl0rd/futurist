@@ -9,7 +9,7 @@ import RoomOptions from './RoomOptions/RoomOptions';
 
 // data
 import flatsQuizeData from './static-data/questions-8';
-import mortgageQuizeData from './static-data/questions-8';
+import mortgageQuizeData from './static-data/questions-5';
 import flatsData from './static-data/flats-data';
 
 Gallery();

@@ -176,3 +176,16 @@
         font-size: rem(15);
     }
 }
+
+@media screen and (max-width: 575px) {
+    .layout-option__subtitle::before {
+        max-width: 300px;
+    }
+    .flats-preview__list {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .flats-preview__item {
+        margin-bottom: 5px;
+    }
+}

@@ -216,3 +216,9 @@
         }
     }
 }
+
+@media screen and (max-width: 575px) {
+    .special-offer__subtitle::before {
+        max-width: 300px;
+    }
+}

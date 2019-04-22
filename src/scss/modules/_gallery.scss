@@ -76,3 +76,9 @@
         }
     }
 }
+
+@media screen and (max-width: 575px) {
+    .gallery__subtitle-wrapper::before {
+        max-width: 300px;
+    }
+}
